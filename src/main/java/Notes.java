@@ -19,12 +19,7 @@ class Notes {
 	public static int dfsHelper(String[][] arr, int row, int col, int moves) {
 
 		// base case
-		if (row == "F" && col =="F"){
-			return noOfMoeve;
-		}
-		else if(row ==-1&& col ==-1){
-			return -1;
-		}
+		
 		// Goes out of bounds
 		// Reach the finish
 		// return number of moves
@@ -34,15 +29,8 @@ class Notes {
 		// recursive call - increase moves
 		// Go right (increase col)
 		// Go up (decrease row)
-		int right = dfhelper(arr, row, col+1, moves+1);
-		int up = dfhelper(arr, row-1,col, moves+1);
-		if (right < 0) {
-			return up;
-		}
-		else if (up < 0) {
-			return right;
-		}
-		return Math.min(up, right);
+		return 0;
+		
 	}
 
 	
