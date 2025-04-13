@@ -21,7 +21,7 @@ public class PracticeProblem {
 		if (arr[row][col]== "F"){
 			return moves;
 		}
-		else if(row ==-1&& col ==-1){
+		else if(row ==-1 || col ==-1){
 			return -1;
 		}
 		// Goes out of bounds
